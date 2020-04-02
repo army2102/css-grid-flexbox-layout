@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+      }
+
+      body {
+        /* height: 100vh; */
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 2fr 1fr 0.25fr;
+        grid-template-areas: 
+        "header header header header"
+        "navbar main main main"
+        "navbar article-1 article-2 article-3"
+        "navbar footer footer footer";
+      }
+      header {
+        grid-area: header;
+
+        background-color: blue;
+      }
+      nav {
+        grid-area: navbar;
+
+        background-color: pink;
+      }
+      .main-article{
+        grid-area: main;
+
+        background-color: green;
+      }
+      .sub-article-1{
+        grid-area: article-1;
+
+        background-color: yellow;
+      }
+      .sub-article-2{
+        grid-area: article-2;
+
+        background-color: yellow;
+      }
+      .sub-article-3{
+        grid-area: article-3;
+
+        background-color: yellow;
+      }
+      footer {
+        grid-area: footer;
+
+        background-color: grey;
+      }
+      
+    </style>
+ 
+  </head>
+  <body>
+
+    <header>HEADER</header>
+    <nav>NAVBAR</nav>
+    <article class="main-article">MAIN CONTENT</article>
+    <article class="sub-article-1">CONTENT-1</article>
+    <article class="sub-article-2">CONTENT-2</article>
+    <article class="sub-article-3">CONTENT-3</article>
+    <footer>FOOTER</footer>
+    
+  </body>
+</html>

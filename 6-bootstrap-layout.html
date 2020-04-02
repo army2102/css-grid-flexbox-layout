@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        /* border: 1px solid black; */
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      header {
+        background-color: blue;
+      }
+      nav {
+        background-color: pink;
+      }
+      .main-article {
+        background-color: green;
+      }
+      .sub-article-1 {
+        background-color: yellow;
+      }
+      .sub-article-2 {
+        background-color: yellow;
+      }
+      .sub-article-3 {
+        background-color: yellow;
+      }
+      footer {
+        background-color: grey;
+      }
+      .row div.col-10 {
+        border: 1px solid black;
+        height: 100%;
+      }
+
+      .margin-0 {
+        margin: 0;
+      }
+
+      .padding-0 {
+        padding: 0;
+      }
+
+      body {
+        display: grid;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>HEADER</header>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-12 col-lg-2 padding-0">NAVBAR</nav>
+        <div class="col-sm-12 col-lg-10 padding-0">
+
+          <article class="main-article">MAIN CONTENT</article>
+          <div class="row margin-0">
+            <div class="col padding-0">
+              <article class="sub-article-1">CONTENT-1</article>
+            </div>
+            <div class="col padding-0">
+              <article class="sub-article-1">CONTENT-2</article>
+            </div>
+            <div class="col padding-0">
+              <article class="sub-article-1">CONTENT-3</article>
+            </div>
+          </div>
+          <footer>FOOTER</footer>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
